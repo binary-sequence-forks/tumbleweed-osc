@@ -14,7 +14,6 @@ RUN zypper --non-interactive in --force-resolution -fy \
     bat \
     bind-utils \
     build \
-    ca-certificates-suse \
     curl \
     dos2unix \
     fd \
@@ -39,7 +38,6 @@ RUN zypper --non-interactive in --force-resolution -fy \
     ripgrep \
     rpm-build \
     rsync \
-    sle-prjmgr-tools \
     sshfs \
     tealdeer \
     tig \
