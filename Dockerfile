@@ -10,11 +10,7 @@ PREFIXEDLABEL org.opensuse.base.description="Tumbleweed container base with tool
 PREFIXEDLABEL org.opensuse.base.disturl="%DISTURL%"
 PREFIXEDLABEL org.opensuse.base.created="%BUILDTIME%"
 
-RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
-    && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/infrastructure/openSUSE_Tumbleweed openSUSE:infrastructure \
-    && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/SUSE:/CA/openSUSE_Tumbleweed SUSE:CA \
-    && zypper --gpg-auto-import-keys refresh  --force --force-build --force-download --services \
-    && zypper --non-interactive in --force-resolution -fy \
+RUN zypper --non-interactive in --force-resolution -fy \
     bat \
     bind-utils \
     build \
