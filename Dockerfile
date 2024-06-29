@@ -30,7 +30,6 @@ RUN zypper --non-interactive in --force-resolution -fy \
     ncdu \
     obs-service-source_validator \
     osc \
-    osc-plugin-staging \
     python3-solv \
     python311-black \
     python311-pylint \
